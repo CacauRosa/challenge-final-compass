@@ -136,7 +136,7 @@ robot tests/
 ```
 ---
 
-## 🧠 Análise Aplicada
+## 🧠 O que foi feito
 
 - Planejamento com foco em testes manuais e automatizados de APIs e front-end
 - Casos pensados para cobrir cenários reais do fluxo de um cinema
