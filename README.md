@@ -1,7 +1,6 @@
 # 🎬 Challenge Final - Cinema App
 
-Este repositório contém o projeto desenvolvido como parte do Challenge Final da trilha de QA da Compass UOL, com foco na automação de testes aplicando o conteúdo estudado ao longo do programa. O objetivo principal foi validar o funcionamento da aplicação de um sistema de cinema, tanto em sua API quanto na interface web, utilizando técnicas de planejamento de 
-testes e execução automatizada com Robot Framework.
+Este repositório contém o projeto desenvolvido como parte do Challenge Final da trilha de QA da Compass UOL, com foco na automação de testes aplicando o conteúdo estudado ao longo do programa. O objetivo principal foi validar o funcionamento da aplicação de um sistema de cinema, tanto em sua API quanto na interface web, utilizando técnicas de planejamento de testes e execução automatizada com Robot Framework.
 
 ## 📖 Índice
 
@@ -15,9 +14,9 @@ O projeto tem como objetivo planejar, documentar e implementar testes funcionais
 ## 💾 Documentos do Projeto
 
 `docs/`
-- 📄 Plano de Testes
-- 📄 Relatório de erros e melhorias
-- 🧠 Mapa Mental da Aplicação
+- Plano de Testes
+- Relatório de erros e melhorias
+- Mapa Mental da Aplicação
 
 `api/`
 - Arquivos de testes automatizados da API
@@ -59,7 +58,7 @@ git clone https://github.com/juniorschmitz/cinema-challenge-back.git
 
 Acesse a pasta
 ```bash
-cd [caminho até onde repositório foi clonado]
+cd [caminho onde repositório foi clonado]
 ```
 
 Instale dependências
@@ -71,7 +70,7 @@ Configure variáveis de ambiente
 
 Crie um arquivo `.env` com as seguintes variáveis:
 ```
-PORT=3000
+PORT=3000                       #ou a que preferir
 MONGODB_URI=[banco de dados]
 JWT_SECRET=seu_jwt_secret_aqui
 ```
@@ -79,7 +78,7 @@ Alimente o banco de dados
 ```bash
 npm run seed
 ```
-> ⚠️ **Importante:** É necessário alimentar o banco de dados para que os testes automatizados funcionem corretamente
+> ⚠️ **Importante:** É necessário alimentar o banco de dados para que os testes automatizados funcionem corretamente!
 
 Iniciar:
 ```bash
@@ -98,7 +97,7 @@ git clone https://github.com/juniorschmitz/cinema-challenge-front
 
 Acesse a pasta
 ```bash
-cd [caminho até onde repositório foi clonado]
+cd [caminho onde repositório foi clonado]
 ```
 
 Instale dependências
@@ -124,11 +123,10 @@ git clone https://github.com/CacauRosa/challenge-final-compass.git
 ```
 Acesse a pasta
 ```bash
-cd [caminho até onde repositório foi clonado]
+cd [caminho onde repositório foi clonado]
 ```
 Instale dependências
 ```bash
-npm install
 pip install -r requirements.txt
 ```
 Executar no VSCode ou outra de sua escolha
@@ -136,14 +134,12 @@ Executar no VSCode ou outra de sua escolha
 # Executar todos os testes
 robot tests/
 ```
-
 ---
 
 ## 🧠 Análise Aplicada
 
-- Planejamento funcional com foco em testes de APIs e front-end
+- Planejamento com foco em testes manuais e automatizados de APIs e front-end
 - Casos pensados para cobrir cenários reais do fluxo de um cinema
-- Cobertura significativa de automação com foco em testes reutilizáveis
 - Uso de PageObjects para garantir boas práticas
 - Validações aplicadas com dados dinâmicos e simulados
 - Estrutura limpa e modularizada para facilitar manutenção
@@ -169,6 +165,7 @@ Este projeto reflete a aplicação prática dos conhecimentos adquiridos sobre:
 
 - Planejamento de testes
 - Criação de cenários funcionais
+- Testes manuais
 - Automação com Robot Framework
 - Análise e cobertura de testes
 - Documentação de bugs e melhorias
