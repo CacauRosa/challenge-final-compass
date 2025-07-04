@@ -5,11 +5,13 @@ Suite Setup         Criar sessão na API
 
 *** Test Cases ***
 CT49: GET Obter todos os cinemas
+    [TAGS]    obter_todos
     GET Endpoint /theaters
     Validar status code             200
     Validar resposta não vazia
 
 CT50: GET Verificar detalhes do cinema
+    [TAGS]    detalhes
     GET Endpoint /theaters/id
     Validar status code             200
     Validar resposta não vazia
