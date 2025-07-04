@@ -174,9 +174,11 @@ Este projeto reflete a aplicação prática dos conhecimentos adquiridos sobre:
 
 ## 👤 Apresentação Pessoal
 
+
 Me chamo Ana Carolina Corrêa Rosa, tenho 19 anos e atualmente curso:
 - Análise e Desenvolvimento de Sistemas (3º semestre - UniCesumar)
 - Ciência e Tecnologia (2º semestre - UFABC)
+
 Resido em Santo André/SP. Tenho olhos castanhos, cabelos castanhos tingidos de vermelho e pele branca.  
 Na apresentação, estarei vestindo moletom cinza.
 
