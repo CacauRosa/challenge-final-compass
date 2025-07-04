@@ -57,4 +57,3 @@ Obter id
         ${id}            Get From Dictionary    ${data}    _id
     END
     Set Test Variable    ${id}
-

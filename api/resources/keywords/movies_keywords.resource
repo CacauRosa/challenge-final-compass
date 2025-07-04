@@ -1,7 +1,4 @@
 *** Settings ***
-Library             RequestsLibrary
-Library             Collections
-Library             FakerLibrary
 Resource        geral_keywords.resource
 
 *** Keywords ***
