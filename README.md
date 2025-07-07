@@ -7,8 +7,8 @@ Este repositório reúne o projeto desenvolvido como parte do Challenge Final da
 ## 📖 Índice
 
 - [🔗 Aplicação Cinema App](#-aplicação-cinema-app)
-- [⚙️ Como Configurar e Executar](#️-como-configurar-e-executar)
-- [▶️ Executar os Testes](#️-executar-os-testes)
+- [⚙️ Como Configurar e Executar o Ambiente](#️-como-configurar-e-executar-o-ambiente)
+- [▶️ Executar os Testes Automatizados](#-executar-os-testes-automatizados)
 - [🔗 Conexão com MongoDB Atlas](#-conexão-com-mongodb-atlas)
 - [🧠 O que foi feito](#-o-que-foi-feito)
 - [✅ Conclusão](#-conclusão)
@@ -17,14 +17,14 @@ Este repositório reúne o projeto desenvolvido como parte do Challenge Final da
 
 ---
 
-### 🔗 Aplicação Cinema App:
+## 🔗 Aplicação Cinema App:
 
 - [Frontend da aplicação](https://github.com/juniorschmitz/cinema-challenge-front)
 - [Backend da aplicação](https://github.com/juniorschmitz/cinema-challenge-back)
 
 ---
 
-## ⚙️ Como Configurar e Executar
+## ⚙️ Como Configurar e Executar o Ambiente
 
 ### ✅ Pré-requisitos
 
