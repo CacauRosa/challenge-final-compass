@@ -6,7 +6,7 @@ O foco dos testes é validar os principais fluxos de uso da interface, garantind
 
 ---
 
-## ✅ Pré-requisitos
+## 📂 Pré-requisitos
 
 Certifique-se de que a aplicação frontend está em execução na porta correta (`http://localhost:3002`).
 

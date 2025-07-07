@@ -6,7 +6,7 @@ O foco dos testes é validar os principais endpoints da aplicação com base nos
 
 ---
 
-## ✅ Pré-requisitos
+## 📂 Pré-requisitos
 
 Certifique-se de que a aplicação backend está em execução na porta correta (por padrão `http://localhost:3000` ou conforme `.env`).
 
