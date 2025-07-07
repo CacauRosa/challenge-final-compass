@@ -28,13 +28,13 @@ Este repositório reúne o projeto desenvolvido como parte do Challenge Final da
 
 ### ✅ Pré-requisitos
 
-* Python 3.10+
-* Node.js + npm
-* Git
-* Robot Framework
-* Chrome ou navegador compatível
-* Instalar dependências listadas no `requirements.txt`
-* Executar aplicação em ambiente local
+- Python 3.10+
+- Node.js + npm
+- Git
+- Robot Framework
+- Chrome ou navegador compatível
+- Instalar dependências listadas no `requirements.txt`
+- Executar aplicação em ambiente local
 
 ---
 
@@ -146,7 +146,7 @@ Este projeto representa a aplicação prática dos conhecimentos adquiridos ao l
 
 ## 👤 Sobre mim
 
-Sou Ana Carolina Corrêa Rosa, estudante de Análise e Desenvolvimento de Sistemas (UniCesumar) e Ciência e Tecnologia (UFABC).
+Sou Ana Carolina Corrêa Rosa, estudante de Análise e Desenvolvimento de Sistemas (UniCesumar) e Ciência e Tecnologia (UFABC). Atualmente, também sou estagiária de QA da Compass UOL.
 
 ---
 
@@ -162,4 +162,4 @@ Agradecimentos especiais aos meus colegas de squad que me ajudaram com dúvidas 
 - [Ádony Lagares](https://github.com/adony-lagares)
 - [Marcos Paulo](https://github.com/Marcosdev03)
 
----s
+---
