@@ -9,9 +9,9 @@ GET Endpoint /theaters
 
 GET Endpoint /theaters/id
     POST Endpoint /theaters
-    Obter id
-    ${response}          GET On Session     cinema    /theaters/${id}
-    Log to Console       Cinema de id ${id}: ${response.content}
+    Obter id    theaters
+    ${response}          GET On Session     cinema    /theaters/${id_theaters}
+    Log to Console       Cinema de id ${id_theaters}: ${response.content}
     Set Test Variable    ${response}
 
 Body para cadastro de cinema
@@ -30,6 +30,5 @@ Body para cadastro de cinema
 POST Endpoint /theaters
     Obter header com token de admin
     Body para cadastro de cinema
-    ${response}          POST On Session     cinema    /theaters   json=${body}    headers=${header}
-    Log To Console       Cinema criado: ${body}
-    Set Test Variable    ${response}
+    ${response_theaters}          POST On Session     cinema    /theaters   json=${body}    headers=${header}
+    Set Test Variable    ${response_theaters}

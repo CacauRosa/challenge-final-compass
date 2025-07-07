@@ -12,8 +12,9 @@ Ir para filmes
     Get Text                   ${element}      equal        Filmes em Cartaz
 
 Ir para detalhes de um filme
+    [Arguments]    ${id_movie}
     ${filme}      FakerLibrary.Random Int    min=1    max=3
-    ${element}    Set Variable    xpath=//*[@id="root"]/main/div/div[2]/div[${filme}]/div[2]/a
+    ${element}    Set Variable    xpath=//a[@href="/movies/${id_movie}"]
     Scroll To Element          ${element}
     Wait For Elements State    ${element}      visible      5
     Get Text                   ${element}      equal        Ver Detalhes
@@ -26,8 +27,7 @@ Verificar sessões disponíveis com horários
     Get Text                   ${element}      equal        Sessões Disponíveis
 
 Ir para reserva
-    ${horario}      FakerLibrary.Random Int    min=1    max=5
-    Click    xpath=(//div[contains(@class, 'session-card')])[${horario}]//a[contains(@class, 'session-button')]
+    Click    xpath=(//div[contains(@class, 'session-card')])[1]//a[contains(@class, 'session-button')]
     ${element}    Set Variable    xpath=//div[@class="screen"]
     Scroll To Element          ${element}
     Wait For Elements State    ${element}      visible      5
