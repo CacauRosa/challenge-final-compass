@@ -1,15 +1,15 @@
 # 🎮 Challenge Final - Cinema App
 
-Este repositório reúne o projeto desenvolvido como parte do Challenge Final da trilha de QA da Compass UOL. O objetivo principal foi validar o funcionamento da aplicação de um sistema de cinema — tanto em sua API quanto na interface web — aplicando técnicas de planejamento, implementação e execução de testes automatizados com Robot Framework.
+Este repositório reúne o projeto desenvolvido como parte do Challenge Final da trilha de QA da Compass UOL. O objetivo principal foi validar o funcionamento da aplicação de um sistema de cinema — tanto em sua API quanto na interface web — aplicando técnicas de planejamento, implementação e execução de testes automatizados com Robot Framework. Os testes realizados simulam fluxos reais de uso e garantem o correto funcionamento das funcionalidades principais da aplicação.
 
 ---
 
 ## 📖 Índice
 
-- [📌 Sobre o Projeto](#-sobre-o-projeto)
-- [📋 Estrutura do Repositório](#-estrutura-do-repositório)
+- [🔗 Aplicação Cinema App](#-aplicação-cinema-app)
 - [⚙️ Como Configurar e Executar](#️-como-configurar-e-executar)
 - [▶️ Executar os Testes](#️-executar-os-testes)
+- [🔗 Conexão com MongoDB Atlas](#-conexão-com-mongodb-atlas)
 - [🧠 O que foi feito](#-o-que-foi-feito)
 - [✅ Conclusão](#-conclusão)
 - [👤 Sobre mim](#-sobre-mim)
@@ -17,29 +17,10 @@ Este repositório reúne o projeto desenvolvido como parte do Challenge Final da
 
 ---
 
-## 📌 Sobre o Projeto
-
-O projeto tem como objetivo planejar, documentar e implementar testes funcionais para validar as funcionalidades do sistema de gerenciamento de cinema. Os testes cobrem tanto a API quanto a interface web, simulando fluxos reais de uso e garantindo o correto funcionamento das funcionalidades principais.
-
-### 🔗 Aplicações utilizadas:
+### 🔗 Aplicação Cinema App:
 
 - [Frontend da aplicação](https://github.com/juniorschmitz/cinema-challenge-front)
 - [Backend da aplicação](https://github.com/juniorschmitz/cinema-challenge-back)
-
----
-
-## 📋 Estrutura do Repositório
-
-```text
-📁 docs/                → Documentação geral (plano de testes, relatório de erros, collection do Postman, etc.)
-📁 resources/           → Dados simulados e arquivos de apoio aos testes (/api e /web)
-📁 tests/               → Casos de teste automatizados com Robot Framework (/api e /web)
-📁 pages/               → PageObjects e lógicas reutilizáveis para os testes web
-📁 lib/                 → Bibliotecas Python personalizadas (keywords, conexão com banco de dados)
-📁 logs/                → Relatórios de execução de testes (/api e /web)
-📄 requirements.txt     → Lista de dependências do projeto
-📄 README.md            → Este documento
-```
 
 ---
 
@@ -80,7 +61,7 @@ Alimente o banco de dados:
 ```bash
 npm run seed
 ```
-> ⚠️ **Importante:** É necessário alimentar o banco de dados para que os testes automatizados funcionem corretamente!
+⚠️ **Importante:** É necessário alimentar o banco de dados para que os testes automatizados funcionem corretamente!
 
 Inicie a aplicação:
 
@@ -105,7 +86,7 @@ npm start
 
 ## ▶️ Executar os Testes Automatizados
 
-> ⚠️ Certifique-se de que o back-end esteja ativo na porta correta (`3000` ou conforme `.env`).
+⚠️ Certifique-se de que o back-end esteja ativo na porta correta (`3000` ou conforme `.env`).
 
 Clone este repositório de testes:
 
