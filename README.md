@@ -7,8 +7,9 @@ Este repositório reúne o projeto desenvolvido como parte do Challenge Final da
 ## 🗂️ Sumário
 
 - [🔗 Aplicação Cinema App](#-aplicação-cinema-app)
+- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
 - [⚙️ Como configurar e executar o ambiente](#️-como-configurar-e-executar-o-ambiente)
-- [▶️ Executar os testes automatizados](#-executar-os-testes-automatizados)
+- [▶️ Executar os testes automatizados](#️-executar-os-testes-automatizados)
 - [🛢️ Conexão com MongoDB Atlas](#-conexão-com-mongodb-atlas)
 - [📋 O que foi feito](#-o-que-foi-feito)
 - [✅ Conclusão](#-conclusão)
@@ -21,6 +22,31 @@ Este repositório reúne o projeto desenvolvido como parte do Challenge Final da
 
 - [Frontend da aplicação](https://github.com/juniorschmitz/cinema-challenge-front)
 - [Backend da aplicação](https://github.com/juniorschmitz/cinema-challenge-back)
+
+---
+
+## 📁 Estrutura do Projeto
+```bash
+challenge-final-compass
+├── api/
+│   ├── resources/
+│   ├── tests/
+│   └── README.md
+├── docs/
+│   ├── Postman/
+│   ├── Mapa mental - API Cinema App.jpg
+│   ├── Plano de Teste - Challenge Final.pdf
+│   ├── README.md
+│   └── Relatório de erros e melhorias - Challenge Final.pdf
+├── web/
+│   ├── libs/
+│   ├── resources/
+│   ├── tests/
+│   └── README.md
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
 
 ---
 
