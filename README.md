@@ -1,6 +1,6 @@
 # 🎬 Challenge Final - Cinema App
 
-Este repositório reúne o projeto desenvolvido como parte do Challenge Final da trilha de QA da Compass UOL. O objetivo principal foi validar o funcionamento da aplicação de um sistema de cinema — tanto em sua API quanto na interface web — aplicando técnicas de planejamento, implementação e execução de testes automatizados com Robot Framework. Os testes realizados simulam fluxos reais de uso e garantem o correto funcionamento das funcionalidades principais da aplicação.
+Este repositório reúne o projeto desenvolvido como parte do Challenge Final da trilha de QA da Compass UOL. O objetivo principal foi validar o funcionamento da aplicação de um sistema de reserva de ingressos de um cinema, tanto da API quanto da interface web, aplicando técnicas de planejamento, implementação e execução de testes automatizados com Robot Framework. Os testes realizados simulam fluxos reais de uso e garantem o correto funcionamento das funcionalidades principais da aplicação.
 
 ---
 
