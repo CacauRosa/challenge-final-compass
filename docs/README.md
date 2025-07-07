@@ -4,7 +4,7 @@ Esta pasta contém os documentos de apoio ao projeto, sendo eles: planejamento, 
 
 ---
 
-## Conteúdo
+## 📖 Conteúdo
 
 - `Plano de Teste - Challenge Final.pdf`: Documento com o planejamento dos testes funcionais.
 - `Relatório de erros e melhorias - Challenge Final.pdf`: Registro de bugs encontrados durante a execução e sugestões de melhoria.
