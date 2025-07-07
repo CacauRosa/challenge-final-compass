@@ -41,7 +41,7 @@ robot -d web/logs web/tests
 Ou um arquivo específico:
 
 ```bash
-robot -d web/logs web/tests/test_reservas.robot
+robot -d web/logs web/tests/auth.robot
 ```
 
 ---

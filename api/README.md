@@ -29,7 +29,7 @@ robot -d api/logs api/tests
 Ou um arquivo específico:
 
 ```bash
-robot -d api/logs api/tests/test_movies.robot
+robot -d api/logs api/tests/tests_auth.robot
 ```
 
 ---
