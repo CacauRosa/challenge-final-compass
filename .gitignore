@@ -1,3 +1,2 @@
-api/logs
-web/logs
-web/libs/__pycache__
+*.logs
+__pycache__
