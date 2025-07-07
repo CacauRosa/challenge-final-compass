@@ -1,18 +1,18 @@
-# 🎮 Challenge Final - Cinema App
+# 🎬 Challenge Final - Cinema App
 
 Este repositório reúne o projeto desenvolvido como parte do Challenge Final da trilha de QA da Compass UOL. O objetivo principal foi validar o funcionamento da aplicação de um sistema de cinema — tanto em sua API quanto na interface web — aplicando técnicas de planejamento, implementação e execução de testes automatizados com Robot Framework. Os testes realizados simulam fluxos reais de uso e garantem o correto funcionamento das funcionalidades principais da aplicação.
 
 ---
 
-## 📖 Índice
+## 🗂️ Sumário
 
 - [🔗 Aplicação Cinema App](#-aplicação-cinema-app)
 - [⚙️ Como configurar e executar o ambiente](#️-como-configurar-e-executar-o-ambiente)
 - [▶️ Executar os testes automatizados](#-executar-os-testes-automatizados)
-- [🔗 Conexão com MongoDB Atlas](#-conexão-com-mongodb-atlas)
-- [🧠 O que foi feito](#-o-que-foi-feito)
+- [🛢️ Conexão com MongoDB Atlas](#-conexão-com-mongodb-atlas)
+- [📋 O que foi feito](#-o-que-foi-feito)
 - [✅ Conclusão](#-conclusão)
-- [👤 Sobre mim](#-sobre-mim)
+- [👩🏻‍💻 Sobre mim](#-sobre-mim)
 - [🤝 Colaboração e créditos](#-colaboração-e-créditos)
 
 ---
@@ -26,15 +26,15 @@ Este repositório reúne o projeto desenvolvido como parte do Challenge Final da
 
 ## ⚙️ Como configurar e executar o ambiente
 
-### ✅ Pré-requisitos
+### 📂 Pré-requisitos
 
-* Python 3.10+
-* Node.js + npm
-* Git
-* Robot Framework
-* Chrome ou navegador compatível
-* Instalar dependências listadas no `requirements.txt`
-* Executar aplicação em ambiente local
+- Python 3.10+
+- Node.js + npm
+- Git
+- Robot Framework
+- Chrome ou navegador compatível
+- Instalar dependências listadas no `requirements.txt`
+- Executar aplicação em ambiente local
 
 ---
 
@@ -111,7 +111,7 @@ robot .
 
 ---
 
-## 🔗 Conexão com MongoDB Atlas
+## 🛢️ Conexão com MongoDB Atlas
 
 As keywords personalizadas para manipulação de dados utilizam `pymongo` com string de conexão no formato:
 
@@ -123,7 +123,7 @@ Foram apontados os locais em que é necessário usar a URI de conexão MongoDB.
 
 ---
 
-## 🧠 O que foi feito
+## 📋 O que foi feito
 
 - Planejamento de testes funcionais (API e UI)
 - Casos pensados para cobrir cenários reais do fluxo de um cinema e garantir os críterios de aceitação das User Stories
@@ -144,9 +144,9 @@ Este projeto representa a aplicação prática dos conhecimentos adquiridos ao l
 
 ---
 
-## 👤 Sobre mim
+## 👩🏻‍💻 Sobre mim
 
-Sou Ana Carolina Corrêa Rosa, estudante de Análise e Desenvolvimento de Sistemas (UniCesumar) e Ciência e Tecnologia (UFABC).
+Sou Ana Carolina Corrêa Rosa, estudante de Análise e Desenvolvimento de Sistemas (UniCesumar) e Ciência e Tecnologia (UFABC). Atualmente, também sou estagiária de QA da Compass UOL.
 
 ---
 
@@ -162,4 +162,4 @@ Agradecimentos especiais aos meus colegas de squad que me ajudaram com dúvidas 
 - [Ádony Lagares](https://github.com/adony-lagares)
 - [Marcos Paulo](https://github.com/Marcosdev03)
 
----s
+---
