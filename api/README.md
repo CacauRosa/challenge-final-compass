@@ -14,16 +14,22 @@ Certifique-se de que a aplicação backend está em execução na porta correta 
 
 ## ▶️ Executando os testes
 
+Caso a porta do frontend seja diferente de `http://localhost:3002`, altere em `api/resources/variables/variables.resource`:
+
+```bash
+${URL_BASE}       http://localhost:3002/api/v1
+```
+
 Execute todos os testes da API:
 
 ```bash
-robot api/tests
+robot -d api/logs api/tests
 ```
 
 Ou um arquivo específico:
 
 ```bash
-robot api/tests/test_movies.robot
+robot -d api/logs api/tests/test_movies.robot
 ```
 
 ---

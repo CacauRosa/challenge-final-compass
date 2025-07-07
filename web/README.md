@@ -14,16 +14,34 @@ Certifique-se de que a aplicação frontend está em execução na porta correta
 
 ## ▶️ Executando os testes
 
+É necessário colocar seu URI de conexão MongoDB em `web/libs/database.py`:
+
+```bash
+client = MongoClient('<sua URI de conexão MongoDB>')
+```
+
+O nome do banco de dados precisa ser `cinemadb` ou ser alterado no mesmo arquivo anterior na linha:
+
+```bash
+db = client['cinemadb']
+```
+
+Caso a porta do frontend seja diferente de `http://localhost:3002`, altere em `web/resources/variables.resource`:
+
+```bash
+${URL_BASE}       http://localhost:3002
+```
+
 Execute todos os testes de interface:
 
 ```bash
-robot web/tests
+robot -d web/logs web/tests
 ```
 
 Ou um arquivo específico:
 
 ```bash
-robot web/tests/test_reservas.robot
+robot -d web/logs web/tests/test_reservas.robot
 ```
 
 ---
