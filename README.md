@@ -1,41 +1,44 @@
-# 🎬 Challenge Final - Cinema App
+# 🎮 Challenge Final - Cinema App
 
-Este repositório contém o projeto desenvolvido como parte do Challenge Final da trilha de QA da Compass UOL, com foco na automação de testes aplicando o conteúdo estudado ao longo do programa. O objetivo principal foi validar o funcionamento da aplicação de um sistema de cinema, tanto em sua API quanto na interface web, utilizando técnicas de planejamento de testes e execução automatizada com Robot Framework.
-
-## 📖 Índice
-
-[🎬 Sobre o Projeto](#-sobre-o-projeto) | [📁 Estrutura do Repositório](#-estrutura-do-repositório) |[⚙️ Como Configurar e Executar](#️-como-configurar-e-executar) | [▶️ Executar os Testes](#️-executar-os-testes) | [🧠 Análise Aplicada](#-análise-aplicada) | [🤝 Colaboração e Créditos](#-colaboração-e-créditos) | [✅ Conclusão](#-conclusão) | [👤 Apresentação Pessoal](#-apresentação-pessoal)
-
-## 📌 Sobre o projeto
-O projeto tem como objetivo planejar, documentar e implementar testes funcionais para validar as funcionalidades do sistema de gerenciamento de cinema. A aplicação da API Cinema App se encontra nos seguintes repositórios:
-- [Front-end](https://github.com/juniorschmitz/cinema-challenge-front)  
-- [Back-end](https://github.com/juniorschmitz/cinema-challenge-back)
-
-## 💾 Documentos do Projeto
-
-`docs/`
-- Plano de Testes
-- Relatório de erros e melhorias
-- Mapa Mental da Aplicação
-
-`api/`
-- Arquivos de testes automatizados da API
-
-`web/`
-- Arquivos de testes automatizados da interface web
+Este repositório reúne o projeto desenvolvido como parte do Challenge Final da trilha de QA da Compass UOL. O objetivo principal foi validar o funcionamento da aplicação de um sistema de cinema — tanto em sua API quanto na interface web — aplicando técnicas de planejamento, implementação e execução de testes automatizados com Robot Framework.
 
 ---
 
-## 📚 Estrutura do Repositório
+## 📖 Índice
 
-```
-📁 docs/                → Documentação (análise, mapa mental, planejamento)
-📁 tests/               → Casos de teste automatizados com Robot Framework
-📁 resources/           → Arquivos de apoio aos testes (ex: arquivos .csv, dados simulados)
-📁 pages/               → PageObjects e lógicas reutilizáveis
-📁 logs/                → Relatórios de execução
-📄 requirements.txt     → Dependências do projeto
-📄 README.md            → Documentação principal
+- [📌 Sobre o Projeto](#-sobre-o-projeto)
+- [📋 Estrutura do Repositório](#-estrutura-do-repositório)
+- [⚙️ Como Configurar e Executar](#️-como-configurar-e-executar)
+- [▶️ Executar os Testes](#️-executar-os-testes)
+- [🧠 O que foi feito](#-o-que-foi-feito)
+- [✅ Conclusão](#-conclusão)
+- [👤 Sobre mim](#-sobre-mim)
+- [🤝 Colaboração e Créditos](#-colaboração-e-créditos)
+
+---
+
+## 📌 Sobre o Projeto
+
+O projeto tem como objetivo planejar, documentar e implementar testes funcionais para validar as funcionalidades do sistema de gerenciamento de cinema. Os testes cobrem tanto a API quanto a interface web, simulando fluxos reais de uso e garantindo o correto funcionamento das funcionalidades principais.
+
+### 🔗 Aplicações utilizadas:
+
+- [Frontend da aplicação](https://github.com/juniorschmitz/cinema-challenge-front)
+- [Backend da aplicação](https://github.com/juniorschmitz/cinema-challenge-back)
+
+---
+
+## 📋 Estrutura do Repositório
+
+```text
+📁 docs/                → Documentação geral (plano de testes, relatório de erros, collection do Postman, etc.)
+📁 resources/           → Dados simulados e arquivos de apoio aos testes (/api e /web)
+📁 tests/               → Casos de teste automatizados com Robot Framework (/api e /web)
+📁 pages/               → PageObjects e lógicas reutilizáveis para os testes web
+📁 lib/                 → Bibliotecas Python personalizadas (keywords, conexão com banco de dados)
+📁 logs/                → Relatórios de execução de testes (/api e /web)
+📄 requirements.txt     → Lista de dependências do projeto
+📄 README.md            → Este documento
 ```
 
 ---
@@ -44,142 +47,138 @@ O projeto tem como objetivo planejar, documentar e implementar testes funcionais
 
 ### ✅ Pré-requisitos
 
-- Python 3.10+
-- Robot Framework
-- Git
+* Python 3.10+
+* Node.js + npm
+* Git
+* Robot Framework
+* Chrome ou navegador compatível
+* Instalar dependências listadas no `requirements.txt`
+* Executar aplicação em ambiente local
 
-### 🚀 Instalação e execução
+---
 
-#### Backend
-Clone o repositório:
+### 🚀 Instalação e execução da aplicação
+
+#### 🔧 Backend
+
 ```bash
 git clone https://github.com/juniorschmitz/cinema-challenge-back.git
-```
-
-Acesse a pasta
-```bash
-cd [caminho onde repositório foi clonado]
-```
-
-Instale dependências
-```bash
+cd <caminho onde repositório foi clonado>
 npm install
 ```
 
-Configure variáveis de ambiente
+Crie o arquivo `.env` com:
 
-Crie um arquivo `.env` com as seguintes variáveis:
+```env
+PORT=3000
+MONGODB_URI=<sua URI de conexão MongoDB>
+JWT_SECRET=<seu jwt secret>
 ```
-PORT=3000                       #ou a que preferir
-MONGODB_URI=[banco de dados]
-JWT_SECRET=seu_jwt_secret_aqui
-```
-Alimente o banco de dados
+
+Alimente o banco de dados:
+
 ```bash
 npm run seed
 ```
 > ⚠️ **Importante:** É necessário alimentar o banco de dados para que os testes automatizados funcionem corretamente!
 
-Iniciar:
+Inicie a aplicação:
+
 ```bash
-# Modo de produção
+# Modo produção
 npm start
 
-# Modo de desenvolvimento
+# Modo desenvolvimento
 npm run dev
 ```
 
-#### Frontend
-Clone o repositório:
-```bash
-git clone https://github.com/juniorschmitz/cinema-challenge-front
-```
+#### 🎨 Frontend
 
-Acesse a pasta
 ```bash
-cd [caminho onde repositório foi clonado]
-```
-
-Instale dependências
-```bash
+git clone https://github.com/juniorschmitz/cinema-challenge-front.git
+cd <caminho onde repositório foi clonado>
 npm install
-# ou
-yarn
-```
-Iniciar:
-```bash
-# Modo de produção
 npm start
-# ou
-yarn start
-
 ```
-### ▶️ Executar os testes automatizados
-> 🔄 **Importante**: Antes de executar os testes, certifique-se de que o **servidor back-end está ativo** (porta 3000 ou a configurada no `.env`).
 
-Clone o repositório:
+---
+
+## ▶️ Executar os Testes Automatizados
+
+> ⚠️ Certifique-se de que o back-end esteja ativo na porta correta (`3000` ou conforme `.env`).
+
+Clone este repositório de testes:
+
 ```bash
 git clone https://github.com/CacauRosa/challenge-final-compass.git
+cd <caminho onde repositório foi clonado>
 ```
-Acesse a pasta
-```bash
-cd [caminho onde repositório foi clonado]
-```
-Instale dependências
+
+Instale as dependências Python:
+
 ```bash
 pip install -r requirements.txt
 ```
-Executar no VSCode ou outra de sua escolha
+
+Execute os testes:
+
 ```bash
-# Executar todos os testes
-robot tests/
+robot .
 ```
+
+⚠️ Para mais informações importantes sobre os testes de api e de web, confira as pastas de cada uma no repositório.
+
+---
+
+## 🔗 Conexão com MongoDB Atlas
+
+As keywords personalizadas para manipulação de dados utilizam `pymongo` com string de conexão no formato:
+
+```
+mongodb+srv://<usuário>:<senha>@<cluster>.mongodb.net/<nome-do-banco>?retryWrites=true&w=majority
+```
+
+Foram apontados os locais em que é necessário usar a URI de conexão MongoDB.
+
 ---
 
 ## 🧠 O que foi feito
 
-- Planejamento com foco em testes manuais e automatizados de APIs e front-end
-- Casos pensados para cobrir cenários reais do fluxo de um cinema
-- Uso de PageObjects para garantir boas práticas
+- Planejamento de testes funcionais (API e UI)
+- Casos pensados para cobrir cenários reais do fluxo de um cinema e garantir os críterios de aceitação das User Stories
 - Validações aplicadas com dados dinâmicos e simulados
 - Estrutura limpa e modularizada para facilitar manutenção
 
 ---
 
-## 🤝 Colaboração e Créditos
-
-Dono da aplicação Cinema App: 
-- [Jacques Schmitz](https://github.com/juniorschmitz)
-
-Aos meus colegas de squad que me ajudaram com dúvidas durante o projeto:
-- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch) 
-- [Ádony Lagares](https://github.com/adony-lagares)    
-- [Marcos Paulo](https://github.com/Marcosdev03)
-
-
----
-
 ## ✅ Conclusão
 
-Este projeto reflete a aplicação prática dos conhecimentos adquiridos sobre:
+Este projeto representa a aplicação prática dos conhecimentos adquiridos ao longo do programa, com foco em:
 
-- Planejamento de testes
-- Criação de cenários funcionais
-- Testes manuais
+- Planejamento e documentação de testes
+- Validação funcional de APIs e interfaces
 - Automação com Robot Framework
-- Análise e cobertura de testes
+- Análise de cobertura e relatórios de falhas
 - Documentação de bugs e melhorias
 
 ---
 
-## 👤 Apresentação Pessoal
+## 👤 Sobre mim
 
-
-Me chamo Ana Carolina Corrêa Rosa, tenho 19 anos e atualmente curso:
-- Análise e Desenvolvimento de Sistemas (3º semestre - UniCesumar)
-- Ciência e Tecnologia (2º semestre - UFABC)
-
-Resido em Santo André/SP. Tenho olhos castanhos, cabelos castanhos tingidos de vermelho e pele branca.  
-Na apresentação, estarei vestindo moletom cinza.
+Sou Ana Carolina Corrêa Rosa, estudante de Análise e Desenvolvimento de Sistemas (UniCesumar) e Ciência e Tecnologia (UFABC).
 
 ---
+
+## 🤝 Colaboração e Créditos
+
+Desenvolvedor da aplicação Cinema App:
+
+- [Jacques Schmitz](https://github.com/juniorschmitz)
+
+Agradecimentos especiais aos meus colegas de squad que me ajudaram com dúvidas durante o projeto:
+
+- [Anna Beatriz Santoro](https://github.com/annasantoro-glitch)
+- [Ádony Lagares](https://github.com/adony-lagares)
+- [Marcos Paulo](https://github.com/Marcosdev03)
+
+---s
