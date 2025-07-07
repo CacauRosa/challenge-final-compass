@@ -1,6 +1,9 @@
 *** Settings ***
 Resource             ../resources/base.resource
 
+Suite Setup          Criar cinema, filme e sessão para testes
+Suite Teardown       Apagar dados do banco de dados
+
 Test Setup           Criar sessão
 Test Teardown        Take Screenshot
 

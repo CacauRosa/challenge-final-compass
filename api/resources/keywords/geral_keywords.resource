@@ -15,16 +15,8 @@ Criar sessão na API
     Create Session      cinema      ${URL_BASE}
 
 Validar status code
-    [Arguments]          ${status_code}
-    Should Be True       ${response.status_code}==${status_code}           O status code deveria ser "${status_code}" e não "${response.status_code}"
-
-Validar sucesso
-    [Arguments]         ${sucesso}
-    ${sucesso_string}    Convert To Boolean    ${sucesso} 
-    Should Be Equal      ${response.json()["success"]}       ${sucesso_string}       O sucesso deveria ser "${sucesso_string}" e não "${response.json()["success"]}"
-    IF    ${response.json()["success"]} == False
-        Log To Console      ${response.json()["errors"]}
-    END
+    [Arguments]          ${status_code}    ${nome_response}
+    Should Be True       ${${nome_response}.status_code}==${status_code}           O status code deveria ser "${status_code}" e não "${${nome_response}.status_code}"
 
 Validar mensagem
     [Arguments]         ${mensagem}
@@ -49,11 +41,7 @@ Obter header com token de admin
     Set Test Variable    ${header}
 
 Obter id
-    ${data}              Get From Dictionary    ${response.json()}    data
-    ${tem_id}            Run Keyword And Return Status    Dictionary Should Contain Key    ${data}    id
-    IF    ${tem_id}
-        ${id}            Get From Dictionary    ${data}    id
-    ELSE
-        ${id}            Get From Dictionary    ${data}    _id
-    END
-    Set Test Variable    ${id}
+    [Arguments]    ${nome_endpoint}
+    ${data}     Get From Dictionary    ${response_${nome_endpoint}.json()}    data
+    ${id_${nome_endpoint}}       Get From Dictionary    ${data}    _id
+    Set Test Variable    ${id_${nome_endpoint}}

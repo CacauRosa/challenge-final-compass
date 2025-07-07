@@ -11,7 +11,6 @@ POST Endpoint /auth/login
 Validar se foi gerado um token de autenticação
     ${data}                Get From Dictionary    ${response.json()}    data
     Should Not Be Empty    ${data["token"]}    Token de autenticação não foi gerado
-    Log to Console         Token: ${data["token"]}
     Set Test Variable      ${data} 
 
 Guardar token gerado
@@ -36,9 +35,9 @@ Body para cadastro de usuário
 
 POST Endpoint /auth/register
     Body para cadastro de usuário
-    ${response}             POST On Session     cinema       /auth/register     json=${body}
+    ${response_users}       POST On Session     cinema       /auth/register     json=${body}
     Log To Console          Usuário criado: ${body}
-    Set Test Variable       ${response}
+    Set Test Variable       ${response_users}
 
 POST Endpoint /auth/register com email invalido
     Body para cadastro de usuário

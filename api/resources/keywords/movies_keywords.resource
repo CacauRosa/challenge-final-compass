@@ -8,9 +8,9 @@ GET Endpoint /movies
 
 GET Endpoint /movies/id
     POST Endpoint /movies
-    Obter id
-    ${response}          GET On Session     cinema    /movies/${id}
-    Log to Console       Filme de id ${id}: ${response.content}
+    Obter id    movies
+    ${response}          GET On Session     cinema    /movies/${id_movies}
+    Log to Console       Filme de id ${id_movies}: ${response.content}
     Set Test Variable    ${response}
 
 Body para cadastro de filme
@@ -38,6 +38,6 @@ Body para cadastro de filme
 POST Endpoint /movies
     Obter header com token de admin
     Body para cadastro de filme
-    ${response}          POST On Session     cinema    /movies    json=${body}    headers=${header}
+    ${response_movies}   POST On Session     cinema    /movies    json=${body}    headers=${header}
     Log To Console       Filme criado: ${body}
-    Set Test Variable    ${response}
+    Set Test Variable    ${response_movies}
