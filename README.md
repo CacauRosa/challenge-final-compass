@@ -7,13 +7,13 @@ Este repositório reúne o projeto desenvolvido como parte do Challenge Final da
 ## 📖 Índice
 
 - [🔗 Aplicação Cinema App](#-aplicação-cinema-app)
-- [⚙️ Como Configurar e Executar o Ambiente](#️-como-configurar-e-executar-o-ambiente)
-- [▶️ Executar os Testes Automatizados](#-executar-os-testes-automatizados)
+- [⚙️ Como configurar e executar o ambiente](#️-como-configurar-e-executar-o-ambiente)
+- [▶️ Executar os testes automatizados](#-executar-os-testes-automatizados)
 - [🔗 Conexão com MongoDB Atlas](#-conexão-com-mongodb-atlas)
 - [🧠 O que foi feito](#-o-que-foi-feito)
 - [✅ Conclusão](#-conclusão)
 - [👤 Sobre mim](#-sobre-mim)
-- [🤝 Colaboração e Créditos](#-colaboração-e-créditos)
+- [🤝 Colaboração e créditos](#-colaboração-e-créditos)
 
 ---
 
@@ -24,7 +24,7 @@ Este repositório reúne o projeto desenvolvido como parte do Challenge Final da
 
 ---
 
-## ⚙️ Como Configurar e Executar o Ambiente
+## ⚙️ Como configurar e executar o ambiente
 
 ### ✅ Pré-requisitos
 
@@ -84,7 +84,7 @@ npm start
 
 ---
 
-## ▶️ Executar os Testes Automatizados
+## ▶️ Executar os testes automatizados
 
 ⚠️ Certifique-se de que o back-end esteja ativo na porta correta (`3000` ou conforme `.env`).
 
@@ -107,7 +107,7 @@ Execute os testes:
 robot .
 ```
 
-⚠️ Para mais informações importantes sobre os testes de api e de web, confira as pastas de cada uma no repositório.
+⚠️ Para mais informações importantes sobre a execução dos testes de api e de web, confira as pastas de cada um no repositório.
 
 ---
 
@@ -150,7 +150,7 @@ Sou Ana Carolina Corrêa Rosa, estudante de Análise e Desenvolvimento de Sistem
 
 ---
 
-## 🤝 Colaboração e Créditos
+## 🤝 Colaboração e créditos
 
 Desenvolvedor da aplicação Cinema App:
 
